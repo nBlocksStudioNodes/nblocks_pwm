@@ -6,7 +6,7 @@
 
 class nBlock_PWM: public nBlockNode {
 public:
-    nBlock_PWM(PinName pinPwm);
+    nBlock_PWM(PinName pinPwm, uint32_t Frequency);
     void triggerInput(uint32_t inputNumber, uint32_t value);
     void step(void);
 private:

@@ -1,9 +1,9 @@
 #include "pwm.h"
 
 /// GPO
-nBlock_PWM::nBlock_PWM(PinName pinPwm): _pwm(pinPwm) {
+nBlock_PWM::nBlock_PWM(PinName pinPwm, uint32_t Frequency): _pwm(pinPwm) {
     duty_int = 0;
-    _pwm.period(0.001);
+    _pwm.period(1/(float)Frequency);
     _pwm.write(0);
     return;
 }
