@@ -1,0 +1,27 @@
+{
+	"category": "Output",
+	"inputs": 1, 
+	"name": "PWM", 
+	"parameters": [
+		{
+			"default": "LED3", 
+			"type": "raw", 
+			"name": "Pin", 
+			"value": "LED3", 
+			"options": []
+		}
+	], 
+	"outputs": 0, 
+	"labels": {
+		"input": ["Value"], 
+		"output": []
+	}, 
+	"schematic_pins": {
+		"inputs": [
+			1
+		], 
+		"outputs": []
+	}, 
+	"repository": "https://github.com/nblocksStudioNodes/nblocks_pwm", 
+	"revision": ""
+}
